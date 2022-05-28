@@ -137,7 +137,7 @@ if (!($chkdom))
 
 #Get the list of mailboxes in the Office 365 tenant
 $Mailboxes = @(Get-Mailbox -ResultSize Unlimited | Where-Object {$_.Alias -ne 'DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}'})
-#$Mailboxes = @(Get-Mailbox fortiz)
+#$Mailboxes = @(Get-Mailbox fortiz)   #for some quick test
  
 Foreach ($Mailbox in $Mailboxes)
 {
